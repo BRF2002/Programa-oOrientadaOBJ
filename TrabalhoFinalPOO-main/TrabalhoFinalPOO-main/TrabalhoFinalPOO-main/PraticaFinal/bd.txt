@@ -1,0 +1,24 @@
+CREATE TABLE achadoseperdidos
+(
+	id_item  		SERIAL,
+	local_item   VARCHAR(20),
+	data_item   VARCHAR(12),
+	nome VARCHAR(40),
+	obs    VARCHAR(40),
+	tipo VARCHAR(20),
+  PRIMARY KEY(id_item)
+);
+INSERT INTO achadoseperdidos (local_item, data_item, nome, obs, tipo)
+	VALUES ('shopping', '07/11/1996', 'tenis', 'perdido', 'pano');	
+
+INSERT INTO achadoseperdidos (local_item, data_item, nome, obs, tipo)
+	VALUES ('escola', '13/06/2010', 'mochilla', 'achado', 'couro');
+	
+INSERT INTO achadoseperdidos (local_item, data_item, nome, obs, tipo)
+	VALUES ('casa', '12/09/2010', 'vasilha', 'perdido', 'plastico');	
+
+INSERT INTO achadoseperdidos (local_item, data_item, nome, obs, tipo)
+	VALUES ('faculdade', '01/05/2022', 'mouse', 'perdido', 'plastico');	
+	
+	
+	select * from achadoseperdidos
